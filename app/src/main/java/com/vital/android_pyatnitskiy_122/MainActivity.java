@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewDebug;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final TextView link = findViewById(R.id.link_text);
         final int rnd = rnd(0, 1000);
-        link.setText("http:\\images\\" + rnd);
+        link.setText(getString(R.string.image_link, Integer.toString(rnd)));
 
     }
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Просмотр фото</string>
+    <string name="image_link">http:\\images\\%1$s</string>
 </resources>
